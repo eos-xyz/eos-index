@@ -1,0 +1,21 @@
+gitindex
+Copyright 2026 EOS
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party components:
+
+- libgit2 (via the `git2` / `libgit2-sys` crates) is used for git-exact line
+  diffs. libgit2 is licensed under GPLv2 **with a linking exception**, which
+  permits linking it from software under any license, including this Apache-2.0
+  work. See https://github.com/libgit2/libgit2 (COPYING).
+
+- gitoxide (`gix` and related crates) — MIT OR Apache-2.0.
+
+- Apache Arrow / Parquet (`arrow`, `parquet` crates) — Apache-2.0.
+
+Runtime dependency:
+
+- `gitindex` invokes the `git` binary for `git blame` (the one order-dependent
+  computation, where git's implementation is exact and optimized). `git` must be
+  on PATH at runtime. git itself is not distributed with this software.

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.eos-xyz/eos-context",
+  "title": "EOS — GitHub Org Context API",
+  "description": "Turn your whole GitHub org into structured, LLM-ready context — ownership & expertise, the module/dependency graph, contributor context, PR & review context, and semantic search over the org's history — for any MCP-compatible agent.",
+  "version": "1.0.2",
+  "repository": {
+    "url": "https://github.com/eos-xyz/eos",
+    "source": "github"
+  },
+  "websiteUrl": "https://eos.dev",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@eos-ai/mcp-server",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "EOS_API_KEY",
+          "description": "Your EOS API key (eos_…). Create one at eos.dev → Settings → API.",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

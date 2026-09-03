@@ -1,0 +1,8 @@
+{
+  "name": "eos-index-server",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": { "eos-index": "./dist/eos-index.js" },
+  "engines": { "node": ">=22.6" },
+  "dependencies": { "@duckdb/node-api": "^1.2.0-alpha.15" }
+}
